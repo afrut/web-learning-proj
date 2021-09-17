@@ -1,0 +1,119 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+html {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+body {
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  font-size: 1.6em;
+}
+
+h1 {
+  text-align: center;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+a {
+  color: #AA6666;
+  outline: 0px;
+}
+
+a:visited {
+  color: #CCAEAE;
+}
+
+a:hover, a:focus {
+  color: #C69999;
+  text-decoration: none;
+}
+
+a:active {
+  color: #008000;
+}
+
+section p a::before {
+  /* background-image: url('icon.png'); */
+  content: "";
+  background-image: url('icon.png');
+  background-size: 0.75em 0.75em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+aside ul li {
+  list-style-type: square;
+}
+
+nav li {
+  border: 2px solid #AA6666;
+  list-style-type: none;
+  display: inline-block;
+  height: 5em;
+  width: 10em;
+  text-align: center;
+  padding: 1.5em 0px;
+  margin: 0em 0em 1em 0em;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+}

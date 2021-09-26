@@ -8,12 +8,12 @@ using Microsoft.Extensions.Logging;
 namespace TourOfHeroes.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class HeroController : ControllerBase
+    [Route("/api/heroes")]
+    public class HeroesController : ControllerBase
     {
-        private readonly ILogger<HeroController> _logger;
+        private readonly ILogger<HeroesController> _logger;
 
-        public HeroController(ILogger<HeroController> logger)
+        public HeroesController(ILogger<HeroesController> logger)
         {
             _logger = logger;
         }

@@ -1,2 +1,6 @@
 s.cmd
 p.cmd
+bin/
+obj/
+*.swp
+.vs
